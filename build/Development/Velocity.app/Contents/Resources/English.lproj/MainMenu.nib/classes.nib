@@ -1,0 +1,35 @@
+{
+    IBClasses = (
+        {
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                drawer = NSDrawer; 
+                fileController = FileController; 
+                imageView = NSImageView; 
+                volumeSelect = NSPopUpButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = DragFromOutlineView; LANGUAGE = ObjC; SUPERCLASS = NSOutlineView; }, 
+        {CLASS = DragToOutlineView; LANGUAGE = ObjC; SUPERCLASS = NSOutlineView; }, 
+        {
+            ACTIONS = {outlineViewAction = id; }; 
+            CLASS = FileController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {appController = AppController; fileOutlineView = NSOutlineView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FileSystemDataSource; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {addGroup = id; deleteSelections = id; outlineViewAction = id; }; 
+            CLASS = GroupController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {appController = AppController; groupOutlineView = NSOutlineView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSOutlineView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }
+    ); 
+    IBVersion = 1; 
+}
